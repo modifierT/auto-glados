@@ -93,7 +93,7 @@ def glados(cookie, logger):
     output = output.decode()
     version = output.split('.')[0]
 
-    driver = undetected_chromedriver.Chrome(version_main = version)
+    driver = undetected_chromedriver.Chrome()
     driver.get("https://glados.rocks")
 
     driver.delete_all_cookies()
